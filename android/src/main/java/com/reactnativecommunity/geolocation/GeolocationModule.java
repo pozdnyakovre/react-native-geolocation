@@ -287,6 +287,7 @@ public class GeolocationModule extends ReactContextBaseJavaModule {
     coords.putDouble("accuracy", location.getAccuracy());
     coords.putDouble("heading", location.getBearing());
     coords.putDouble("speed", location.getSpeed());
+    coords.putString("provider", location.getProvider());
     map.putMap("coords", coords);
     map.putDouble("timestamp", location.getTime());
 
